@@ -12,7 +12,7 @@ jacoco.exec
 # doc/**
 _site/*
 _pages/*
-docs/**/*
+# docs/**/*
 
 # Vim
 *.swp
