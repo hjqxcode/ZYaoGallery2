@@ -8,7 +8,7 @@
     <original-package android:name="com.android.gallery3d" />
 
     <permission
-        android:name="com.android.gallery3d.permission.GALLERY_PROVIDER"
+        android:name="com.zyao.gallery3d.permission.GALLERY_PROVIDER"
         android:protectionLevel="signatureOrSystem" />
 
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
@@ -276,10 +276,10 @@
 
         <provider
             android:name="com.android.gallery3d.filtershow.provider.SharedImageProvider"
-            android:authorities="com.android.gallery3d.filtershow.provider.SharedImageProvider"
+            android:authorities="com.zyao.gallery3d.filtershow.provider.SharedImageProvider"
             android:grantUriPermissions="true"
-            android:readPermission="com.android.gallery3d.filtershow.permission.READ"
-            android:writePermission="com.android.gallery3d.filtershow.permission.WRITE" />
+            android:readPermission="com.zyao.gallery3d.filtershow.permission.READ"
+            android:writePermission="com.zyao.gallery3d.filtershow.permission.WRITE" />
 
         <service
             android:name=".filtershow.pipeline.ProcessingService"
@@ -331,14 +331,14 @@
 
         <provider
             android:name="com.android.gallery3d.provider.GalleryProvider"
-            android:authorities="com.android.gallery3d.provider"
+            android:authorities="com.zyao.gallery3d.provider"
             android:exported="true"
             android:grantUriPermissions="true"
-            android:permission="com.android.gallery3d.permission.GALLERY_PROVIDER"
+            android:permission="com.zyao.gallery3d.permission.GALLERY_PROVIDER"
             android:syncable="false" />
         <provider
             android:name="com.android.photos.data.PhotoProvider"
-            android:authorities="com.android.gallery3d.photoprovider"
+            android:authorities="com.zyao.gallery3d.photoprovider"
             android:exported="false"
             android:syncable="false" />
 
@@ -397,6 +397,5 @@
             </intent-filter>
         </receiver>
 
-        <service android:name="com.android.camera.MediaSaveService" />
     </application>
 </manifest>
